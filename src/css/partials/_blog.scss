@@ -1,0 +1,58 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+
+  h1 {
+    color: white;
+    font-size: 2.5em;
+  }
+
+  p {
+    color: #d1d1d1;
+  }
+
+  .time-display {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+
+    .time {
+      flex: 1;
+      padding: 20px 10px;
+      margin: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+
+      h2 {
+        font-size: 2em;
+        color: $background-color;
+      }
+
+      h4 {
+        color: darken($accent-color, 10);
+      }
+    }
+  }
+
+  button {
+    @include button;
+    @include buttonAnchor;
+  }
+}
+
+@media (max-width: 768px) {
+  .time-display {
+    width: 60%;
+
+    .time {
+      flex: 1;
+    }
+  }
+}

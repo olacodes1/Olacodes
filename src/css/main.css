@@ -14,63 +14,6 @@ body a {
   font-weight: semibold;
 }
 
-body .menu {
-  position: absolute;
-  z-index: 3;
-  right: 35px;
-  top: 35px;
-  cursor: pointer;
-  -webkit-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
-}
-
-body .menu .btn-line {
-  width: 28px;
-  height: 3px;
-  margin: 0 0 5px 0;
-  background-color: #fff;
-  -webkit-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
-}
-
-body .menu.close {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-  position: fixed;
-}
-
-body .menu.close .btn-line:nth-child(1) {
-  -webkit-transform: rotate(45deg) translate(5px, 5px);
-          transform: rotate(45deg) translate(5px, 5px);
-}
-
-body .menu.close .btn-line:nth-child(2) {
-  opacity: 0;
-}
-
-body .menu.close .btn-line:nth-child(3) {
-  -webkit-transform: rotate(-45deg) translate(7px, -6px);
-          transform: rotate(-45deg) translate(7px, -6px);
-}
-
-body nav {
-  text-align: left;
-}
-
-body nav ul {
-  list-style: none;
-}
-
-body nav ul li {
-  margin: 20px;
-}
-
-body nav ul li a:hover {
-  color: tomato;
-  -webkit-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
-}
-
 body header {
   width: 100%;
   padding: 20px;
@@ -101,9 +44,6 @@ body header button {
   border: none;
   -webkit-transition: background 1s;
   transition: background 1s;
-}
-
-body header button a {
   text-decoration: none;
   color: white;
   font-weight: semibold;
@@ -135,6 +75,45 @@ body header .social-icons a i {
 
 body header .social-icons a i:hover {
   color: tomato;
+}
+
+.menu {
+  position: absolute;
+  z-index: 3;
+  right: 35px;
+  top: 35px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.menu .btn-line {
+  width: 28px;
+  height: 3px;
+  margin: 0 0 5px 0;
+  background-color: #fff;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.menu.close {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  position: fixed;
+}
+
+.menu.close .btn-line:nth-child(1) {
+  -webkit-transform: rotate(45deg) translate(5px, 5px);
+          transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu.close .btn-line:nth-child(2) {
+  opacity: 0;
+}
+
+.menu.close .btn-line:nth-child(3) {
+  -webkit-transform: rotate(-45deg) translate(7px, -6px);
+          transform: rotate(-45deg) translate(7px, -6px);
 }
 
 nav {
@@ -178,11 +157,117 @@ nav .nav-links.show {
           transform: translate3d(0, 0, 0);
 }
 
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  margin: 20px;
+}
+
+nav ul li a:hover {
+  color: tomato;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
 @media (min-width: 768px) {
   p {
     width: 60%;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+}
+
+main h1 {
+  color: white;
+  font-size: 2.5em;
+}
+
+main p {
+  color: #d1d1d1;
+}
+
+main .time-display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+
+main .time-display .time {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 20px 10px;
+  margin: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+main .time-display .time h2 {
+  font-size: 2em;
+  color: #262626;
+}
+
+main .time-display .time h4 {
+  color: #ff3814;
+}
+
+main button {
+  padding: 0.7rem 2rem;
+  background-color: #16161a;
+  border: none;
+  -webkit-transition: background 1s;
+  transition: background 1s;
+  text-decoration: none;
+  color: white;
+  font-weight: semibold;
+  font-size: 15px;
+}
+
+main button:hover {
+  background-color: tomato;
+  -webkit-transform: translate3d(0, -1px, 0);
+          transform: translate3d(0, -1px, 0);
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.37);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.37);
+}
+
+@media (max-width: 768px) {
+  .time-display {
+    width: 60%;
+  }
+  .time-display .time {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
   }
 }
 

@@ -7,62 +7,6 @@ body {
     @include anchor;
   }
 
-  .menu {
-    position: absolute;
-    z-index: 3;
-    right: 35px;
-    top: 35px;
-    cursor: pointer;
-    @include easeOut;
-
-    .btn-line {
-      width: 28px;
-      height: 3px;
-      margin: 0 0 5px 0;
-      background-color: #fff;
-      @include easeOut;
-    }
-
-    //   Rotate into X
-    &.close {
-      transform: rotate(180deg);
-      position: fixed;
-
-      .btn-line {
-        // Line 1 - Rotate
-        &:nth-child(1) {
-          transform: rotate(45deg) translate(5px, 5px);
-        }
-
-        // Line 2 - hide
-        &:nth-child(2) {
-          opacity: 0;
-        }
-
-        // Line 3 - Rotate
-        &:nth-child(3) {
-          transform: rotate(-45deg) translate(7px, -6px);
-        }
-      }
-    }
-  }
-
-  nav {
-    text-align: left;
-
-    ul {
-      list-style: none;
-
-      li {
-        margin: 20px;
-
-        a:hover {
-          color: $accent-color;
-          @include easeOut;
-        }
-      }
-    }
-  }
   header {
     width: 100%;
     //   overflow: hidden;
@@ -88,21 +32,8 @@ body {
     }
 
     button {
-      padding: 0.7rem 2rem;
-      background-color: #16161a;
-      border: none;
-      transition: background 1s;
-
-      a {
-        @include anchor;
-        font-size: 15px;
-      }
-
-      &:hover {
-        background-color: $accent-color;
-        transform: translate3d(0, -1px, 0);
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.37);
-      }
+      @include button;
+      @include buttonAnchor;
     }
 
     .social-icons {
@@ -124,6 +55,45 @@ body {
   }
 }
 
+.menu {
+  position: absolute;
+  z-index: 3;
+  right: 35px;
+  top: 35px;
+  cursor: pointer;
+  @include easeOut;
+
+  .btn-line {
+    width: 28px;
+    height: 3px;
+    margin: 0 0 5px 0;
+    background-color: #fff;
+    @include easeOut;
+  }
+
+  //   Rotate into X
+  &.close {
+    transform: rotate(180deg);
+    position: fixed;
+
+    .btn-line {
+      // Line 1 - Rotate
+      &:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+
+      // Line 2 - hide
+      &:nth-child(2) {
+        opacity: 0;
+      }
+
+      // Line 3 - Rotate
+      &:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+      }
+    }
+  }
+}
 nav {
   position: fixed;
   top: 0;
@@ -149,6 +119,19 @@ nav {
 
     &.show {
       transform: translate3d(0, 0, 0);
+    }
+  }
+
+  ul {
+    list-style: none;
+
+    li {
+      margin: 20px;
+
+      a:hover {
+        color: $accent-color;
+        @include easeOut;
+      }
     }
   }
 }
