@@ -1,0 +1,17 @@
+@import "./partials/config";
+@import "./partials/variable";
+@import "./partials/color";
+@import "./partials/mixin";
+@import "./partials/header";
+@import "./partials/work";
+@import "./partials/contact";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}

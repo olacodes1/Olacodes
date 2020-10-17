@@ -1,0 +1,15 @@
+@mixin anchor {
+  text-decoration: none;
+  color: white;
+  font-weight: semibold;
+}
+
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin easeOut {
+  transition: all 0.5s ease-out;
+}
