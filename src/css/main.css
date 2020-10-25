@@ -48,7 +48,6 @@ body header button {
   color: white;
   font-weight: semibold;
   font-size: 15px;
-  height: 100%;
 }
 
 body header button:hover {
@@ -324,7 +323,6 @@ main button {
   color: white;
   font-weight: semibold;
   font-size: 15px;
-  height: 100%;
 }
 
 main button:hover {
