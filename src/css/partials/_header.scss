@@ -9,7 +9,6 @@ body {
 
   header {
     width: 100%;
-    //   overflow: hidden;
     padding: 20px;
     margin-top: 20vh;
     position: fixed;
@@ -98,7 +97,7 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.9;
+  opacity: 0.95;
   visibility: hidden;
 
   &.show {

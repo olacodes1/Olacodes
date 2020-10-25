@@ -120,7 +120,7 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.9;
+  opacity: 0.95;
   visibility: hidden;
 }
 
@@ -193,6 +193,8 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
   width: 100%;
   height: 100vh;
   padding: 20px;
@@ -218,14 +220,14 @@ main .time-display {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 main .time-display .time {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  padding: 20px 10px;
+  width: 30%;
+  max-width: 30%;
+  padding: 20px 0.5em;
   margin: 20px;
   background-color: #fff;
   border-radius: 5px;
@@ -260,9 +262,9 @@ main button:hover {
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.37);
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .time-display {
-    width: 60%;
+    max-width: 60%;
   }
   .time-display .time {
     -webkit-box-flex: 1;
