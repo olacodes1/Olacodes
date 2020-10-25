@@ -1,0 +1,59 @@
+.work {
+  width: 100%;
+  padding: 20px;
+  margin-top: 10vh;
+  z-index: -2;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  h1 {
+    color: white;
+  }
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #111111;
+  width: 80%;
+  padding: 2em;
+  text-align: left;
+  margin: 1em;
+  margin-left: auto;
+  margin-right: auto;
+
+  h1 {
+    margin-bottom: 5px;
+  }
+
+  p {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+
+  .display {
+    display: flex;
+    font-size: 14px;
+
+    div {
+      margin-right: 10px;
+      cursor: pointer;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .card {
+    width: 45%;
+
+    p {
+      width: 100%;
+    }
+  }
+}
