@@ -238,6 +238,15 @@ nav ul li a:hover {
   cursor: pointer;
 }
 
+.card .display div a {
+  color: #777778;
+  margin-right: 5px;
+}
+
+.card .display div a i {
+  padding-right: 5px;
+}
+
 @media (min-width: 768px) {
   .card {
     width: 45%;
