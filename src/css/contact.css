@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #262626;
+    color: #fff;
+}
+
+.contact {
+    margin: 10px 20px;
+    margin-top: 20vh;
+    text-align: center;
+}
+
+h1 {
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+
+
+div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+}
+input {
+    height: 35px;
+    padding-left: 15px;
+    border: none;
+}
+
+button {
+    width: 70%;
+    height: 35px;
+    border: none;
+    color: black;
+    background-color: tomato;
+    margin:  0 auto;
+}
