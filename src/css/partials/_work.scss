@@ -15,7 +15,7 @@
 .cards {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
 }
 
@@ -59,7 +59,7 @@
 
 @media (min-width: 768px) {
   .card {
-    width: 45%;
+    width: 30%;
 
     p {
       width: 100%;
