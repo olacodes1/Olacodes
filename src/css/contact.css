@@ -46,6 +46,12 @@ input {
     border: none;
 }
 
+textarea {
+    border: none;
+    padding: 15px;
+    font-size: 14px;
+}
+
 button {
     width: 70%;
     height: 35px;
