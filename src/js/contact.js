@@ -29,6 +29,17 @@ function submitForm(e) {
 
   // Save Message
   saveMessages(name, email, message);
+
+  // Show alert
+  document.querySelector(".alert").style.display = "block";
+
+  // Hide alert after 3 sec
+  setTimeout(function () {
+    document.querySelector(".alert").style.display = "none";
+  }, 3000);
+
+  // Clear form
+  document.getElementById("contact-form").reset();
 }
 
 // Function to get form  value

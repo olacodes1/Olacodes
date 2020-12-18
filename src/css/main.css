@@ -403,6 +403,7 @@ main button:hover {
   padding: 15px;
   font-size: 14px;
   outline: 0;
+  font-family: "Lato";
 }
 
 .contact button {
@@ -431,11 +432,22 @@ main button:hover {
   background-color: tomato;
 }
 
+.alert {
+  padding: 10px;
+  background: #79c870;
+  color: white;
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  display: none;
+}
+
 @media (min-width: 500px) {
   .contact {
     width: 70%;
     margin-right: auto;
     margin-left: auto;
+    margin-top: 15vh !important;
   }
 }
 
