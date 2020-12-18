@@ -1,6 +1,7 @@
 .contact {
   margin: 10px 20px;
   margin-top: 15vh;
+  margin-top: 5vh;
   text-align: center;
 
   h1 {
@@ -43,12 +44,14 @@
   }
 
   button {
-    width: 70%;
-    height: 35px;
-    border: none;
-    color: black;
-    background-color: tomato;
-    margin: 0 auto;
+    @include button;
+    width: 50%;
+    @include buttonAnchor;
+
+    &:hover {
+      color: black;
+      background-color: tomato;
+    }
   }
 }
 

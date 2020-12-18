@@ -355,6 +355,7 @@ main button:hover {
 .contact {
   margin: 10px 20px;
   margin-top: 15vh;
+  margin-top: 5vh;
   text-align: center;
 }
 
@@ -405,12 +406,29 @@ main button:hover {
 }
 
 .contact button {
-  width: 70%;
-  height: 35px;
+  padding: 0.7rem 2rem;
+  background-color: #16161a;
   border: none;
+  -webkit-transition: background 1s;
+  transition: background 1s;
+  width: 50%;
+  text-decoration: none;
+  color: white;
+  font-weight: semibold;
+  font-size: 15px;
+}
+
+.contact button:hover {
+  background-color: tomato;
+  -webkit-transform: translate3d(0, -1px, 0);
+          transform: translate3d(0, -1px, 0);
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.37);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.37);
+}
+
+.contact button:hover {
   color: black;
   background-color: tomato;
-  margin: 0 auto;
 }
 
 @media (min-width: 500px) {
