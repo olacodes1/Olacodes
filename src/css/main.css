@@ -352,6 +352,81 @@ main button:hover {
   }
 }
 
+.contact {
+  margin: 10px 20px;
+  margin-top: 15vh;
+  text-align: center;
+}
+
+.contact h1 {
+  font-size: 27px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.contact h3 {
+  font-size: 23px;
+  margin-bottom: 10px;
+}
+
+.contact div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.contact div label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.contact div input {
+  height: 35px;
+  padding-left: 15px;
+  border: none;
+  outline: 0;
+}
+
+.contact div textarea {
+  border: none;
+  padding: 15px;
+  font-size: 14px;
+  outline: 0;
+}
+
+.contact button {
+  width: 70%;
+  height: 35px;
+  border: none;
+  color: black;
+  background-color: tomato;
+  margin: 0 auto;
+}
+
+@media (min-width: 500px) {
+  .contact {
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 800px) {
+  .contact {
+    width: 50%;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
