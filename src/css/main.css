@@ -354,7 +354,7 @@ main button:hover {
 
 .contact {
   margin: 10px 20px;
-  margin-top: 20vh;
+  margin-top: 20vh !important;
   margin-top: 5vh;
   text-align: center;
 }
