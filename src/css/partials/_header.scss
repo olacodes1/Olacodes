@@ -32,6 +32,10 @@ body {
     button {
       @include button;
       @include buttonAnchor;
+
+      i {
+        margin-left: 5px;
+      }
     }
 
     .social-icons {

@@ -57,6 +57,10 @@ body header button:hover {
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.37);
 }
 
+body header button i {
+  margin-left: 5px;
+}
+
 body header .social-icons {
   margin-top: 10vh;
 }
@@ -222,7 +226,7 @@ nav ul li a:hover {
 
 .card p {
   font-size: 15px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .card .display {
